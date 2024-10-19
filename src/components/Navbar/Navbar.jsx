@@ -35,14 +35,14 @@ const NavItems = styled.ul`
   list-style:none;`;
 
   const NavLink = styled.a`
-  color:${({theme})=> theme.text_primary}};
+  color:${({theme})=> theme.text_primary};
   font-weight:500;
   cursor:pointer;
   text-decoration:none;
   transition:all 0.2s ease-in-out;
-  :hover{
+  &:hover{
   color:${({theme})=> theme.primary}
-  };`;
+  ;`;
 
 const Navbar = () => {
   return (
