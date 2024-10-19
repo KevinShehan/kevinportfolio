@@ -1,5 +1,6 @@
 import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
+import {Bio} from '../../data/constants';
 
 const NavbarContainer = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -15,14 +16,11 @@ const NavbarContainer = styled.div`
 `;
 
 const NavLogo = styled(LinkR)`
+width:80%;
   padding: 0 6px;
   text-decoration: none;
   color: white; /* Apply a specific color from your theme */
-  font-weight: bold; /* Example of making it more visually distinct */
-  font-size: 1.5rem; /* Adjust the font size */
-  &:hover {
-    color: ${({ theme }) => theme.hover}; /* Assuming you have a hover color in your theme */
-  }
+ 
 `;
 
 const NavItems = styled.ul`
@@ -89,7 +87,7 @@ const Navbar = () => {
       </NavItems>
 
       <ButtonContainer>
-        <GithubBUtton href={Bio}>GitHub Profile</GithubBUtton>
+        <GithubBUtton href={Bio.github} target='_blank'>GitHub Profile</GithubBUtton>
       </ButtonContainer>
     </NavbarContainer>
   );
