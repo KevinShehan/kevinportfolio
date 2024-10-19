@@ -58,7 +58,21 @@ display:flex;
   `;
 
 const GithubBUtton = styled.a`
-  
+  border: 1px solid ${({ theme }) => theme.primary};
+  color:${({ theme }) => theme.primary};
+  justify-content:center;
+  display:flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius:20px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:500;
+  transition:all 0.5s ease-in-out;
+  text-decoration:none;
+  &:hover{
+  color:${({ theme }) => theme.primary};
+  background-color:${({ theme }) => theme.primary};
   `;
 
 const Navbar = () => {
@@ -75,7 +89,7 @@ const Navbar = () => {
       </NavItems>
 
       <ButtonContainer>
-        <GithubBUtton>GitHub Profile</GithubBUtton>
+        <GithubBUtton href={Bio}>GitHub Profile</GithubBUtton>
       </ButtonContainer>
     </NavbarContainer>
   );
