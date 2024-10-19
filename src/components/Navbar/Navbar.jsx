@@ -32,24 +32,40 @@ const NavItems = styled.ul`
   justify-content: center;
   gap:32px;
   padding:0 6px;
-  list-style:none;`;
+  list-style:none;
+    @media screen and (max-width: 768px){
+  display:none;}`;
 
-  const NavLink = styled.a`
-  color:${({theme})=> theme.text_primary};
+const NavLink = styled.a`
+  color:${({ theme }) => theme.text_primary};
   font-weight:500;
   cursor:pointer;
   text-decoration:none;
   transition:all 0.2s ease-in-out;
   &:hover{
-  color:${({theme})=> theme.primary}
+  color:${({ theme }) => theme.primary}
   ;`;
 
+const ButtonContainer = styled.div`
+width:80%;
+height:100%;
+display:flex;
+  justify-content: end;
+  align-items:center;
+  padding: 0 6px;
+  @media screen and (max-width: 768px){
+  display:none;}
+  `;
+
+const GithubBUtton = styled.a`
   
+  `;
+
 const Navbar = () => {
   return (
     <NavbarContainer className="navbar">
       <NavLogo to="/">
-        Kevin 
+        Kevin
       </NavLogo>
       <NavItems>
         <NavLink href="#about">About</NavLink>
