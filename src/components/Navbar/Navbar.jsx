@@ -34,11 +34,21 @@ const NavItems = styled.ul`
   padding:0 6px;
   list-style:none;`;
 
+  const NavLink = styled.a`
+  color:${({theme})=> theme.text_primary}};
+  font-weight:500;
+  cursor:pointer;
+  text-decoration:none;
+  transition:all 0.2s ease-in-out;
+  :hover{
+  color:${({theme})=> theme.primary}
+  };`;
+
 const Navbar = () => {
   return (
     <NavbarContainer className="navbar">
       <NavLogo to="/">
-        Kevin Shehan
+        Kevin 
       </NavLogo>
       <NavItems>
         <NavLink href="#about">About</NavLink>
