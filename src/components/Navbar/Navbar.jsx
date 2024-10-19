@@ -25,6 +25,15 @@ const NavLogo = styled(LinkR)`
   }
 `;
 
+const NavItems = styled.ul`
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:32px;
+  padding:0 6px;
+  list-style:none;`;
+
 const Navbar = () => {
   return (
     <NavbarContainer className="navbar">
@@ -32,10 +41,10 @@ const Navbar = () => {
         Kevin Shehan
       </NavLogo>
       <NavItems>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/skills">Skills</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink href="#about">About</NavLink>
+        <NavLink href="#about">Skills</NavLink>
+        <NavLink href="#about">Projects</NavLink>
+        <NavLink href="#about">Contact</NavLink>
       </NavItems>
     </NavbarContainer>
   );
