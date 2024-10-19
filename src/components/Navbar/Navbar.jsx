@@ -75,7 +75,8 @@ const GithubBUtton = styled.a`
 
 const Navbar = () => {
   return (
-    <NavbarContainer className="navbar">
+   <Nav>
+     <NavbarContainer className="navbar">
       <NavLogo to="/">
         Kevin
       </NavLogo>
@@ -90,6 +91,7 @@ const Navbar = () => {
         <GithubBUtton href={Bio.github} target='_blank'>GitHub Profile</GithubBUtton>
       </ButtonContainer>
     </NavbarContainer>
+   </Nav>
   );
 }
 
