@@ -44,6 +44,7 @@ const NavItems = styled.ul`
   color:${({theme})=> theme.primary}
   ;`;
 
+  
 const Navbar = () => {
   return (
     <NavbarContainer className="navbar">
@@ -56,6 +57,10 @@ const Navbar = () => {
         <NavLink href="#about">Projects</NavLink>
         <NavLink href="#about">Contact</NavLink>
       </NavItems>
+
+      <ButtonContainer>
+        <GithubBUtton>GitHub Profile</GithubBUtton>
+      </ButtonContainer>
     </NavbarContainer>
   );
 }
