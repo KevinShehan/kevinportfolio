@@ -3,23 +3,16 @@ import Hero from './components/Hero/Hero';
 import Navbar from './components/Navbar/Navbar';
 import ProfilePicture from './components/profilepicture/ProfilePicture';
 import React, { useState, useEffect } from 'react';
+import styled from "styled-components";                                                                                                                              
 
 
 function App() {
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
 
 
 
   return (
     <>
-      Kevin
-      <Navbar theme={theme} setTheme={setTheme}/>
-      <Hero />
-      <ProfilePicture />
+      
     </>
   )
 }
